@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        tr th {
+            background-color: rgb(88, 88, 255);
+            color: white;
+            padding: 2%;
+        }
+        tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+        tr:nth-child(odd) {
+            background-color: aqua;
+        }
+        fieldset {
+            margin: 3%;
+        }
+        #table-2 tr {
+            background: none;
+        }
+        #table-2 tr td{
+            padding: 2%;
+        }
+        input {
+            font-weight: bolder;
+        }
+        select{
+            font-weight: bolder;
+        }
+        select option {
+            font-weight: bolder;
+        }
+    </style>
+    <h1>Các buổi chiếu phim miễn phí</h1>
+    <p>Chúng tôi sẽ tổ chức một số buổi chiếu phim miễn phí cho cộng đồng</p>
+    <p>Vui lòng lưu ý rằng các sự kiện sau đây miễn phí cho mọi người tham dự</p>
+    <ul>
+        <li>Biệt đội siêu anh hùng</li>
+        <li>Cô Ba Sài Gòn</li>
+        <li>Em chua 18</li>
+        <li>Tiệc trăng máu</li>
+    </ul>
+    <table>
+        <tr>
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <td>Biệt đội siêu anh hùng</td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Cô Ba Sài Gòn</td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Em chua 18</td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Tiệc trăng máu</td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+            <td>
+                <p>Thứ Bảy, ngày 4 tháng 2 năm 2025</p>
+                <p>11 giờ sáng - 1 giờ chiều</p>
+            </td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>Đăng ký tham dự</legend>
+        <table id="table-2">
+            <tr>
+                <td>Tên của bạn</td>
+                <td><input type="text" name="name" id="name" placeholder="điền tên của bạn"></td>
+            </tr>
+            <tr>
+                <td>Email của bạn</td>
+                <td><input type="email" name="email" id="email" placeholder="điền email của bạn"></td>
+            </tr>
+            <tr>
+                <td>Rạp chiếu phim gần nhất của bạn:</td>
+                <td><select name="location" id="location">
+                    <option value="New York">New York</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="San Francisco">San Francisco</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Bạn có muốn nhận thông tin từ chúng tôi không ?</td>
+                <td>
+                    <input type="radio" name="yes-no" id="Có" value="Có">
+                    <label for="Có">Có</label>
+                    <input type="radio" name="yes-no" id="Có-cái-lồn" value="Có-cái-lồn">
+                    <label for="Có-cái-lồn">Có cái lồn</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

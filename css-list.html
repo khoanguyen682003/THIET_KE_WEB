@@ -1,0 +1,56 @@
+ <!-- 
+Unordered list:
+- none
+- disc
+- circle
+- square
+Ordered list:
+- decimal: 1 2 3
+- decimal-leading-zero: 01 02 03
+- lower-alpha: a b c
+- upper-alpha: A B C
+- lower-roma: i. ii. iii.
+- upper-roman: I. II. III.
+* Đặt css một trong các thuộc tính trên bằng list-style-type
+List style image:
+- list-style-imgae: url("đường dẫn");)
+List style position:
+- list-style-position: outside/inside
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #list-1 {
+            list-style-type: disc;
+        }
+        #list-2{
+            list-style: decimal;
+        }
+    </style>
+    <h1>Excercise: List style</h1>
+    <h3>Unordered List:</h3>
+    <ul id="list-1">
+        <li>apples</li>
+        <li>oranges</li>
+        <li>bananas</li>
+    </ul>
+    <h3>Ordered List:</h3>
+    <ul id="list-2">
+        <li>red</li>
+        <li>blue</li>
+        <li>green</li>
+    </ul>
+    <h3>Mixed List Style:</h3>
+    <ul>
+        <li style="list-style-type: circle;">Circle Marker</li>
+        <li style="list-style-type: square;">Square Marker</li>
+        <li style="list-style-type: disc;">Triangle Marker</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+1) Boostap là gì ?
+- Là thư viện gồm HTML, CSS và Javascipt
+- Một Framerowk hỗ trợ xây dựng website
+2) Ưu điểm của Boostrap:
+- Dễ sử dụng, chỉ cần có kiến thức về HTML và CSS cơ bản
+- Khả năng tương thích cao với các thiết bị có kích thước khác nhau ( responsive )
+- Tương thích với các loại trình duyệt
+3) Boostrap Grids:
+- Tạo ra tối đa 12 cột trong trang
+- hệ thống Boostrap gồm có 4 lớp:
+    + xs: dugn cho điện thoại
+    + sm: dùng cho máy tính bảng
+    + md: dung cho desktop
+    + lg: dùng cho desktop với màn hình có kích thước lớn
+4) Các biến:
+- m: đặt margin
+- p: bộ đệm
+- t: đặt margin-top hoặc padding-top
+- b: đặt margon-bottom hoặc padding-bottom
+- l: đặt lề trái hoặc khoảng đệm bên trái
+- r: đặt margin-right hoặc padding-right
+- x: đặt cả padding-left và padding-right hoặc margin-left và margin-right
+- y: đặt cả padding-top và padding-bottom hoặc margin-top và margin-botttom trống - đặt lề hoặc khoảng đệm trên cả 4 mặt của phần tử
+5) m - đối với các lớp đặt lề, như thế này:
+mt - cho các lớp đã thiết lập margin-top
+mb - cho các lớp đã thiết lập margin-botom
+ml - cho các lớp đã thiết lập margin-left
+mr - cho các lớp đã thiết lập margin-right
+mx - cho các lớp đặt cả margin-left và margin-right
+my - cho các lớp đặt cả margin-top và margin-bottom
+6) Kho tàng code Boostrap vào copy bỏ vào dự án để tái sử dụng cho nhanh: 
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+7) Thiết lập code web sử dụng boostrap ban đầu:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <!-- Nội dung -->
+        <div>
+            <!-- Menubar bên trái -->
+            <div>
+            </div>
+            <!-- Nội dung bên phải-->
+            <!-- Carousel -->
+            <div>
+            </div>
+        <!-- Danh sách sản phẩm - Card -->
+        <div>
+        </div>
+        <!-- Footer -->
+        <div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

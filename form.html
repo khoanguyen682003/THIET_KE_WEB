@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         td,                        th {
+            border: 1px solid black;
+        }
+    </style>
+    <form action="">
+        <table>
+            <tr>
+                <th colspan="2">Registion form</th>
+            </tr>
+            <tr>
+                <th>Enter name</th>
+                <th><input type="text" name="name" placeholder="insert name" required></th>
+            </tr>
+            <tr>
+                <th>Date of birth</th>
+                <th><input type="date" name="date" placeholder="dd/mm/yy" required></th>
+            </tr>
+            <tr>
+                <th>Enter telephone</th>
+                <th><input type="tel" name="telephone" placeholder="insert telephone" required></th>
+            </tr>
+            <tr>
+                <th>Enter password</th>
+                <th><input type="password" name="password" placeholder="insert password" required></th>
+            </tr>
+            <tr>
+                <th>Enter address</th>
+                <th><textarea name="address" id="" placeholder="insert address" required></textarea></th>
+            </tr>
+            <tr>
+                <th>Select game</th>
+                <th>
+                    <input type="checkbox" id="Hockey" name="game">
+                    <label for="Hockey">Hockey</label> </br>   
+                    <input type="checkbox" id="Football" name="game">
+                    <label for="Football">Football</label> </br>
+                    <input type="checkbox" id="Badminton" name="game">
+                    <label for="Badminton">Badminton</label> </br>
+                    <input type="checkbox" id="Cricket" name="game">
+                    <label for="Cricket">Cricket</label> </br>
+                    <input type="checkbox" id="Volleyball" name="game">
+                    <label for="Volleyball">Volleyball</label> </br>
+                </th>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <th>
+                    <input type="radio" id="Man" name="gender">
+                    <label for="Man">Man</label> </br>
+                    <input type="radio" id="Woman" name="gender">
+                    <label for="Woman">Woman</label> </br>
+                    <input type="radio" id="Gay" name="gender">
+                    <label for="Gay">Gay</label> </br>   
+                </th>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <th>
+                    <input type="number" required min="1" max="100" name="age" placeholder="insert age" step="1">
+                </th>
+                
+            </tr>
+            <tr>
+                <th>Avatar</th>
+                <th>
+                    <input type="file" name="avatar" required>
+                </th>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <th>
+                    <textarea name="Note" id="" placeholder="take note" required></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Sign-in">
+                </td>
+            </tr>
+            
+        </table>
+       
+    </form>
+</body>
+</html>

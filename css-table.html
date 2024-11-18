@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* tr.even: css dòng chẵn trong bảng
+            tr.odd: css dòng lẻ trong bảng */
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            tr {
+                text-align: center;
+            }
+            #table-1 tr:nth-child(even){
+                background-color: rgb(207, 207, 207);
+            }
+            #table-1 tr th{
+                border-bottom: 2px solid rgb(47, 47, 47);
+                border-top:  2px solid rgb(173, 173, 173);
+                padding: 1%;
+                width: 15%;
+                text-transform: uppercase;
+            }
+            #table-1 tr td {
+                border:none;
+                border-right: 2px solid white;
+                padding: 1%;
+            }
+            #table-2 tr th,td {
+                border: 1px solid black;
+                padding: 1%;
+                width: 15%;
+            }
+            #table-2 tr:nth-child(odd){
+                background-color: rgb(207, 207, 207);
+
+            }
+    </style>
+    <table id="table-1">
+        <h1>BẢNG ĐẤU GIÁ SÁCH</h1>
+        <tr>
+            <th>Tác giả</th>
+            <th>Tiêu đề</th>
+            <th>Giá dự trữ</th>
+            <th>Giá hiện tại</th>
+        </tr>
+        <tr>
+            <td>e.e.cummings</td>
+            <td>tulips & chimmneys</td>
+            <td>$2,000.00</td>
+            <td>$2,642.50</td>
+        </tr>
+        <tr>
+            <td>charlie o'dreans</td>
+            <td>Polemes</td>
+            <td></td>
+            <td>5,866.25</td>
+        </tr>
+        <tr>
+            <td>t.s.liot</td>
+            <td>poém 1909-1925</td>
+            <td>1,250.00</td>
+            <td>8,499.35</td>
+        </tr>
+    </table>
+    <h1>DANH SÁCH SINH VIÊN</h1>
+    <table id="table-2">
+        <tr>
+            <th>mã sinh viên</th>
+            <th>họ và tên</th>
+            <th>ngày sinh</tH>
+            <th>điểm tb</th>
+        </tr>
+        <tr>
+            <td>0001</td>
+            <td>Vinh</td>
+            <td>1/1/2001</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>0002</td>
+            <td>Tuấn</td>
+            <td>2/1/2001</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>0003</td>
+            <td>Phúc</td>
+            <td>3/1/2001</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>

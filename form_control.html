@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-controls</title>
+</head>
+<body>
+    <form action="#">
+        <!-- Text input -->
+        <p>Tên đăng nhập <input type="text" name="username" size="20%" maxlength="30" placeholder="Insert name"></p> 
+        <p>Mật khẩu <input type="password" name="password" placeholder="Nhập mật khẩu" size="20%" maxlength="30"></p>
+        <p>Giới tính: 
+            <input type="radio" name="gender" id="Nam" value="Nam">
+            <label for="Nam">Nam</label>
+            <input type="radio" name="gender" id="Nữ" value="Nữ">
+            <label for="Nữ">Nữ</label>
+            <input type="radio" name="gender" id="Gay" value="Gay">
+            <label for="Gay">Gay</label>
+        </p>
+        <fieldset>
+            <legend>Sở thích: </legend>
+                <p><input type="checkbox" name="fav" id="music" value="music">
+                <label for="music">Âm nhạc</label></p>
+                <p><input type="checkbox" name="fav" id="game" value="game">
+                <label for="game">Chơi game</label></p>
+                <p><input type="checkbox" name="fav" id="work" value="work">
+                <label for="work">Làm việc</label></p>
+            
+        </fieldset>
+        
+        <p>thiết bị hay sử dụng</p><select name="thietbi" id="" multiple size="10">
+            <option value="dienthoai">Điện thoại</option>
+            <option value="maytinh">Máy tính</option>
+            <option value="tablet">máy tính bảng</option>
+        </select>
+        <p>Gửi CV: <input type="file"></p>
+        <p><input type="submit" value="gửi thông tin"> | <input type="reset" value="Nhập lại"></p>
+    </form>
+</body>
+</html>

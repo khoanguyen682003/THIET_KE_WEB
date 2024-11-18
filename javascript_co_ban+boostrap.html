@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script lang="Javascript">
+        function thongbao() {
+            alert("xin chào bạn !");
+        }
+        function xuly(){
+                ip = document.getElementById("fullname");
+                div = document.getElementById("content");
+
+                div.innerText = "Xin chào: "+ ip.value;
+            }
+        function cong(){
+            a =document.getElementById("a")
+            b =document.getElementById("b")
+            ketqua =document.getElementById("ketqua")
+            ketqua.value = parseFloat(a.value) + parseFloat(b.value)
+        } 
+        function tru(){
+            a =document.getElementById("a")
+            b =document.getElementById("b")
+            ketqua =document.getElementById("ketqua")
+            ketqua.value = parseFloat(a.value) - parseFloat(b.value)
+        }
+        function nhan(){
+            a =document.getElementById("a")
+            b =document.getElementById("b")
+            ketqua =document.getElementById("ketqua")
+            ketqua.value = parseFloat(a.value) * parseFloat(b.value)
+        }
+        function chia(){
+            a =document.getElementById("a")
+            b =document.getElementById("b")
+            ketqua =document.getElementById("ketqua")
+            ketqua.value = parseFloat(a.value) / parseFloat(b.value)
+        }  
+        function changeColorGreen(){
+		var my_div = document.getElementById("my_div");
+		my_div.style = "background-color: green; color:white"
+    
+	}
+	function changeColorYellow(){
+		var my_div = document.getElementById("my_div");
+		my_div.style = "background-color: yellow;"
+	}
+    function my_submit(){
+			var exampleInputEmail1 = document.getElementById("exampleInputEmail1");
+			var exampleInputPassword1 = document.getElementById("exampleInputPassword1");
+
+			var email = exampleInputEmail1.value;
+			var password = exampleInputPassword1.value;
+
+			if(email.length==0 || password.length==0){
+				if (email.length==0){
+					alert("Bạn chưa nhập Email!");
+				}
+	
+				if (password.length==0){
+					alert("Bạn chưa nhập Password!");
+				}
+			}else {
+				var form = document.getElementById("my_form");
+				form.submit();
+			}
+		}
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài tập Javascript cơ bản</h1>
+    <h3>Bài 1: Viết chương trình để nhấn nút là hiện ra thông báo</h3>
+    <button onclick="thongbao()">Click me</button>
+    <h3>Bài 2: Tạo một Input-text, khi người dùng nhập tên rồi nhấn tab, trang web sẽ hiển thị nội dung: "xin chào + tên đã nhập"</h3>
+    Nhập vào tên của bạn: <input type="text" id="fullname" onchange="xuly()" />
+    <div id="content">Xin chào: </div>
+    <h3>Bài 3: Tạo một Input-text, khi người dùng nhập tên tới đâu, trang web sẽ hiển thị nội dung tới đó: "xin chào + tên đã nhập"</h3>
+    Nhập vào tên của bạn: <input type="text" id="fullname" onkeyup="xuly()" />
+    <div id="content">Xin chào: </div>
+    <p>Lưu ý: bài tập 2 và 3 không thể đều chạy thành công trên 1 trang web</p>
+    <h3>Cộng trừ nhân chia</h3>
+    <input type="text" id="a"><br/>
+    <input type="text" id="b"><br/>
+    <input type="text" id="ketqua"><br/>
+    <button onclick="cong()"> + </button>
+    <button onclick="tru()"> - </button>
+    <button onclick="nhan()"> * </button>
+    <button oncanplay="chia()"> / </button>
+    <h3>Bài 4: viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ div</h3>
+    <div style="background-color: yellow;" id="my_div" onmouseover="changeColorGreen()" onmouseleave="changeColorYellow()">
+
+		Bài 1: Tạo một input-text, khi người dùng nhập tên, trang web sẽ hiển
+		thị nội dung: “Xin chào “ + tên đã nhập.
+
+		<hr />
+
+		Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung
+		của đoạn trong 1 thẻ div (bằng 2 cách).
+
+		<hr />
+		Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng
+		di chuyển chuột vào khi vực nội bộ của thẻ div.
+
+	</div>
+    <h3>Bài 5: Viết chương trình để submit thông tin nhập trên form</h3>
+    <div class="container">
+		<form action="http://google.com" id="my_form">
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email
+					address</label> <input type="email" class="form-control"
+					id="exampleInputEmail1" aria-describedby="emailHelp">
+				<div id="emailHelp" class="form-text">We'll never share your
+					email with anyone else.</div>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control"
+					id="exampleInputPassword1">
+			</div>
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me
+					out</label>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="my_submit()">Submit</button>
+		</form>
+	</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+    

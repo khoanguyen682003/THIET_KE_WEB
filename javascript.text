@@ -1,0 +1,44 @@
+1) giới thiệu về javascript:
+- Là ngôn ngữ lập trình phiên dịch (không phải biên dịch)
+- Được nhúng trong trang HTML, dùng để theo tác với phần tử của trang html đó
+2) Sử dụng để:
+- tạo ra các chúc năng động cho một trang html
+- giảm tải xử lý ở phía server
+3) Không dùng:
+- khi truy cập tài nguyên không do trình duyệt quản lý
+- các thông tin cần bảo mật ( các chương trình Javascript được tải về trình duyệt của khách hàng khi chạy)
+4) thêm mã javascript:
+<script>
+    // code
+</script>
+5) Cách truy cập các Element:
+// Sử dụng querySelector() để truy cập một phần tủ duy nhất
+const element = document.querySelectorAll(".my-element")
+// Sử dụng querySelectorAll() để truy cập một mảng các phần tử
+const element = document.querySelectorAll(".myl-element")
+//Sử dụng getElementById() để truy cập một phần tử có id cụ thể:
+const element =  document.getElementById("my-element-id")
+// Sử dụng getElementByTagName() để truy cập tất cả các phần tử có thẻ cụ thể
+const elements = document.getElementsByTagName("div")
+6) Document Object Model (DOM): Javascript có thể truy xuất trực tiếp gọi thành phần của trang HTML bằng cách sử dụng DOM
+Ví dụ về truy xuất đố tuowjgn trong mảng DOM;
+// truy xuất hình ảnh đầu tiên:
+windows.dpcument.images[0];
+// truy xuất phần tử thứ hai của form đầu tiên:
+windows.document.<form name>.<element name>;
+7) Lấy ra giá trị của các thành phần trong trang html:
+- getElementsById()
+- getElementsByClassName()
+- getElementsByName()
+- getElementsByTagName()
+8) Các hàm, sự kiện phổ biến hay dùng:
+- onClick - xảy ra khi một phần tử được onClick
+- onSubmit - xảy ra khi một form được submit
+- onMouseOver - xảy ra khi con trỏ chuột di chuyển trên phần tử
+- onChange - xảy ra khi giá trị trong một control trong mọt form thay đổi
+- onLoad - xảy ra khi tài liệu được nạp vào trình duyệt
+- v.v...
+9) Thay đổi CSS:
+document.getElementById("<object>").style.<cssname> = "<something>"
+10) khai báo biến, mảng
+11) If-else, vòng lặp while, for, hàm
